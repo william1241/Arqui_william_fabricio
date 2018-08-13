@@ -18,7 +18,7 @@ ARCHITECTURE a_alu OF alu8 IS
 SIGNAL r1: std_logic_vector(8 downto 0);
 BEGIN 
 
-		PROCESS(ci, a, b, op)
+		PROCESS(ci, a, b, op, r1)
 		BEGIN
 			CASE op IS
 				WHEN "0000" =>

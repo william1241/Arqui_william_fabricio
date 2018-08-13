@@ -1,0 +1,21 @@
+ibrary ieee;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+
+ENTITY e_calc IS
+PORT(entrada:IN bit;
+		salida: OUT bit);
+END ENTITY e_calc;
+
+ARCHITECTURE a_calc OF e_calc IS
+PORT MAP(a1<=a:IN std_logic_vector(7 downto 0);
+		b1<=b:IN std_logic_vector(7 downto 0);
+		op1<=op:IN std_logic_vector(7 downto 0);
+		ci1<=ci: IN std_logic;
+		co1<=co: OUT std_logic;
+		r1<=r: OUT std_logic_vector(7 downto 0);
+		z1<=z: OUT std_logic);
+BEGIN
+END ARCHITECTURE a_calc; 
